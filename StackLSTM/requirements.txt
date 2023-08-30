@@ -1,0 +1,5 @@
+scikit-learn
+torch
+overrides
+git+https://github.com/viking-sudo-rm/stacknn-core
+sctokenizer
