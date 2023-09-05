@@ -9,7 +9,7 @@ This repository contains the source code for our paper "Broken Promises: Measuri
 
 ## Repository Structure
 
-Experiments regarding the Causal Graph Model reside in `CGIN`, while experiments using the StackLSTM are in `StackLSTM`. Experiments using CodeT5+ and LineVul are in `LLM`. The directory `Perturbations` contains scripts to apply obfuscation and styling to obtain the perturbed training data. The experiments using the graph-based model `ReVeal` were performed using [this repository](https://github.com/SAP-samples/security-research-codegraphsmote).
+Experiments regarding the Causal Graph Model reside in `CGIN`, while experiments using the StackLSTM are in `StackLSTM`. Experiments using CodeT5+ and LineVul are in `LLM`. The directory `Perturbations` contains scripts to apply obfuscation and styling to obtain the perturbed training data. The experiments using the graph-based model `ReVeal` were performed using [this repository](https://github.com/SAP-samples/security-research-codegraphsmote). We used and modified the original code from both [LineVul](https://github.com/awsm-research/LineVul) and [CodeT5](https://github.com/salesforce/CodeT5) for finetuning all our LLM models.
 
 ## Requirements
 
@@ -45,6 +45,10 @@ For `StackLSTM`:
 - pickle
 - torchray
 - stacknn
+
+For `Perturbations` / for generating the perturbed dataset:
+- Download the file from [here](https://github.com/jogonba2/CObfuscator/blob/61bf098367e671811ec58382d4e12e3764ba5fee/cobfuscator.py) and move it to the folder `Perturbations`
+- Download the file from [here](https://github.com/whoward3/C-Code-Obfuscator/blob/05d4555f9daea1f12d8690d488aa4a17157448b7/obfuscator/obfuscator.py) and also move it to the folder `Perturbations`
 
 
 ## How to obtain support
